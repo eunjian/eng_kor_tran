@@ -17,10 +17,10 @@
   - 초성, 중성, 종성의 조합 규칙에 따라 음절을 구분합니다.
   - 분리된 음절들을 리스트 형태로 반환합니다.
 ### 3. double_cons():
-  - 연속된 자음을 쌍자음으로 변환합니다.
+  - 겹받침이 만들어질 수 있는 연속된 자음을 겹받침으로 변환합니다.
   - double_consonant_map 딕셔너리를 사용하여 쌍자음 변환 규칙을 적용합니다.
 ### 4. double_vowel():
-  - 연속된 모음을 이중모음으로 변환합니다.
+  - 연속된 모음들 중에서 이중 음으로 변환이 가능하면, 이중모음으로 변환합니다.
   - double_vowel_map 딕셔너리를 사용하여 이중모음 변환 규칙을 적용합니다.
 ### 5. separerate_cho_joong_jong():
   - 음절을 초성, 중성, 종성으로 분리합니다.
@@ -37,7 +37,7 @@
 ```
 input = "dlwpsms dnflrk gpdjwudi gkf tlrks"
 result = eng2kor_transformer(input)
-print(result)  # 안녕하세요 반갑습니다 코드 잘됩니다
+print(result)  # 이제는 우리가 헤어져야 할 시간
 ```
 
 ## 추가 정보
